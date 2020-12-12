@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Register</title>
+</head>
+
+<body>
+
+    <!-- header ----- -->
+    <header>
+        <div class="md:flex  bg-blue-400 md:justify-between p-2 sm:justify-between">
+            <!-- left -->
+            <div class="flex items-center">
+                <img width="60"
+                    src="https://cdn1.iconfinder.com/data/icons/app-user-interface-line/64/chat_app_user_interface_conversation_dialogue_discussion-256.png"
+                    alt="">
+                <a href="#" class="text-lg font-bold text-blue-100">RizTalk</a>
+            </div>
+            <!-- right -->
+
+            <div class="pt-2">
+                <a href="forntpage.html"
+                    class="inline-block text-sm py-1 px-4 rounded-full bg-blue-200 hover:bg-blue-100 text-blue-600 mr-2">Home</a>
+                <a href="register.html"
+                    class="inline-block text-sm py-1 px-4 rounded-full bg-blue-200  hover:bg-blue-100 text-blue-600 mr-2">Create
+                    Acount</a>
+                <a href="create.html"
+                    class="inline-block  text-sm py-1 px-4 rounded-full bg-blue-200  hover:bg-blue-100 text-blue-600 mr-2">Create
+                    Topic</a>
+            </div>
+        </div>
+    </header>
+    <!-- main part -->
+
+    <main class="bg-blue-200">
+
+        <div class="md:grid md:grid-cols-8 gap-2 py-2 pb-20">
+            <!-- left -->
+            <div class=" col-start-2 col-span-4  text-left">
+                <h1 class="text-blue-600 font-bold">Create An Acount</h1>
+                <hr>
+                <form action="" enctype="multipart/form-data" >
+                    <div class="mt-4 flex flex-col">
+                        <label >Name*:</label>
+                        <input name="name" type="text" placeholder="Enter name"  class="rounded h-8">
+                    </div>
+                    <div class="mt-4 flex flex-col">
+                        <label >Email*:</label>
+                        <input name="email" type="email" placeholder="Enter email"  class="rounded h-8">
+                    </div>
+                    <div class="mt-4 flex flex-col">
+                        <label >choose Username*:</label>
+                        <input name="username" type="text" placeholder="Choose a username"  class="rounded h-8">
+                    </div>
+                    <div class="mt-4 flex flex-col">
+                        <label >password*:</label>
+                        <input name="password" type="password" placeholder="Type Password"  class="rounded h-8">
+                    </div>
+                    <div class="mt-4 flex flex-col">
+                        <label >Confirm password*:</label>
+                        <input name="password2" type="password" placeholder="Type Password"  class="rounded h-8">
+                    </div>
+                    <div class="mt-4 flex flex-col">
+                        <label >Upload Avatar:</label>
+                        <input name="avatar" type="file"   class="rounded h-8">
+                    </div>
+                    <div class="mt-4 flex flex-col">
+                        <label>About Me</label>
+                         <textarea name="about" rows="3" cols="60"  class="rounded "
+                        placeholder="Tell us about yourself (Optional)"></textarea>
+                    </div>
+
+                    <input name="register" type="submit" class="py-2 px-4 rounded-full bg-blue-500 mt-4 text-blue-200 hover:bg-blue-400" value="Register" />
+                </form>
+                
+
+
+            </div>
+            <!-- right     sidebar -->
+            <div class="col-start-6 col-span-2 pt-6 ml-6 ">
+
+
+                <!-- login-form -->
+
+                <div class="bg-blue-300 p-4  rounded align-center">
+                    <h3 class="font-bold">Login Form</h3>
+                    <hr>
+                    <form action="">
+
+                        <div class="mt-2">
+                            <label class="rounded block">Username</label>
+                            <input name="username" type="text" class="" placeholder="Enter Username">
+                        </div>
+                        <div class="mt-2">
+                            <label class="rounded block">Password</label>
+                            <input name="password" type="password" class="form-control" placeholder="Enter Password">
+                        </div>
+                        <button name="do_login" type="submit"  class="text-sm py-1 px-1 rounded bg-blue-200  hover:bg-blue-100 text-blue-600 mr-2 mt-2">Login</button>
+                        <a  href="register.html"  class="text-sm py-1 px-1  bg-blue-200 rounded hover:bg-blue-100 text-blue-600 mr-2 mt-2"> Create Account</a>
+                    </form>
+                </div>
+
+                <!-- categories -->
+
+                <div class="bg-blue-300 mt-6  p-4 rounded">
+
+                    <h3 class="font-bold pl-2">Categories</h3>
+                    <hr>
+                    <div class=" flex flex-col pl-2">
+                        <a href="#" class=" mt-2 active hover:underline"> All Topics <span
+                                class="float-right rounded-lg bg-gray-200 px-2">14</span></a>
+                        <a href="#" class="mt-2 p-1 hover:underline"> Design<span
+                                class="float-right rounded-lg bg-gray-200 px-2">4</span></a>
+                        <a href="#" class="mt-2 p-1 hover:underline"> Development<span
+                                class="float-right rounded-lg bg-gray-200 px-2">9</span></a>
+                        <a href="#" class="mt-2 p-1 hover:underline"> Business & Marketing <span
+                                class="float-right rounded-lg bg-gray-200 px-2 ">12</span></a>
+                        <a href="#" class="mt-2 p-1 hover:underline"> Search Engines<span
+                                class="float-right rounded-lg bg-gray-200 px-2">7</span></a>
+                        <a href="#" class="mt-2 p-1 hover:underline"> Cloud & Hosting <span
+                                class="float-right rounded-lg bg-gray-200 px-2">3</span></a>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class=" flex justify-around p-10 bg-blue-800 text-blue-200">
+            <!-- left part of footer-->
+
+            <div class="md:w-1/2">
+                <h3>Forum Statistics</h3>
+                <ul class="flex flex-col">
+                    <li>Total Number of Users: <strong>52</strong></li>
+                    <li>Total Number of Topics: <strong>10</strong></li>
+                    <li>Total Number of Categories: <strong>5</strong></li>
+                </ul>
+
+            </div>
+
+            <!-- right part of the footer -->
+            <div class=" flex flex-col items-center">
+                <div class="flex items-center">
+                    <p> Copyright &copy; RizTalk</p>
+                    <img width="60"
+                        src="https://cdn1.iconfinder.com/data/icons/app-user-interface-line/64/chat_app_user_interface_conversation_dialogue_discussion-256.png"
+                        alt="">
+                </div>
+                <p>Samima Hassan</p>
+            </div>
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>
